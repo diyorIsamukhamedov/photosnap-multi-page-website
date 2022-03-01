@@ -1,0 +1,78 @@
+// MIXINS
+/* ==================================================================================================================== */
+
+@mixin flex {
+    display: flex;
+}
+
+@mixin grid {
+    display: grid;
+}
+
+@mixin uppercase {
+    text-transform: uppercase;
+}
+
+@mixin flex-column {
+    flex-direction: column;
+}
+
+@mixin flex-row {
+    flex-direction: row;
+}
+
+@mixin bg-cover {
+    background-size: cover;
+}
+
+@mixin bg-center {
+    background-position: center;
+}
+
+@mixin bg-no-repeat {
+    background-repeat: no-repeat;
+}
+
+@mixin transition {
+    transition: all .4s;
+}
+
+@mixin common-styles-for-rectangle-decor-mob {
+    position        : absolute;
+    top             : 0;
+    left            : 3.3rem / 37.5rem * 100%;
+    width           : 12.8rem;
+    height          : 0.6rem;
+    background-image: $main-accent;
+}
+
+@mixin common-styles-for-rectangle-decor-tab {
+    top   : 0;
+    left  : 0;
+    width : 0.6rem;
+    height: 100%;
+}
+
+@mixin common-styles-for-navbar-links {
+    @include uppercase;
+    @include transition;
+    font-family   : $ff-dm-sans-bold;
+    font-size     : $font-size-extra-small;
+    line-height   : 2rem;
+    letter-spacing: $letter-spacing-small;
+}
+
+@mixin common-styles-for-gallery-imgs {
+    @include bg-cover;
+    @include bg-center;
+    @include bg-no-repeat;
+}
+
+@mixin common-styles-for-dates-and-authors {
+    font-family: $ff-dm-sans-regular;
+    font-size  : 1.3rem;
+    line-height: 1.7rem;
+    color      : $primary-color;
+}
+
+/* ==================================================================================================================== */

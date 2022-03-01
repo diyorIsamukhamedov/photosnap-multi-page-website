@@ -1,0 +1,648 @@
+/*MEDIA QUERIES FOR TABLET SCREEN SIZES*/
+
+@media screen and (min-width: 500px) {
+
+    /*THE SECTIONS*/
+
+    /*THE CREATE, STORIES, EVERYONE AND HERO SECTIONS*/
+    /*============================================================================================================*/
+
+    %common-styles-for-section-imgs {
+        @include bg-cover;
+        @include bg-center;
+        @include bg-no-repeat;
+        width: 27.3rem / 76.8rem * 100%;
+    }
+
+    /*TEXT CONTENT*/
+    .create .column,
+    .stories .column,
+    .everyone .column,
+    .hero .column {
+        @include flex-row;
+        width: 100%;
+    }
+
+    .text-container {
+        position: static;
+        width   : 49.5rem / 76.8rem * 100%;
+    }
+
+    .create .text-container {
+        min-height: 65rem;
+    }
+
+    .stories .text-container,
+    .everyone .text-container {
+        min-height: 60rem;
+    }
+
+    .create .text-box,
+    .hero .text-box {
+        position: relative;
+    }
+
+    .create-rectangle-decor,
+    .hero-rectangle-decor {
+        @include common-styles-for-rectangle-decor-tab;
+    }
+
+    .text-box,
+    .hero .text-box {
+        padding: 0 5.4rem / 49.5rem * 100% 0 5.4rem / 49.5rem * 100%;
+    }
+
+    .text-box__heading {
+        font-size     : $font-size-large;
+        line-height   : $line-height-large;
+        letter-spacing: $letter-spacing-large;
+        margin-bottom : 2.1rem;
+    }
+
+    .text-box__descr {
+        margin-bottom: 4.8rem;
+    }
+
+    .hero .text-box__descr {
+        margin-bottom: 0;
+    }
+
+    /*========================================================================*/
+
+    /*IMAGES CONTENT*/
+    .create__img>img,
+    .stories__img>img,
+    .everyone__img>img,
+    .hero__img>img,
+    .hero__img2>img {
+        display: none;
+    }
+
+    .create__img {
+        @extend %common-styles-for-section-imgs;
+        background-image: url('../../../assets/home/tablet/create-and-share-tablet.jpg');
+        min-height      : 65rem;
+    }
+
+    .stories__img {
+        @extend %common-styles-for-section-imgs;
+        background-image: url('../../../assets/home/tablet/beautiful-stories-tablet.jpg');
+        min-height      : 60rem;
+    }
+
+    .everyone__img {
+        @extend %common-styles-for-section-imgs;
+        background-image: url('../../../assets/home/tablet/designed-for-everyone-tablet.jpg');
+        min-height      : 60rem;
+    }
+
+    .hero__img {
+        @extend %common-styles-for-section-imgs;
+        background-image: url('../../../assets/features/tablet/hero-tablet.jpg');
+        min-height      : 49rem;
+    }
+
+    .hero__img2 {
+        @extend %common-styles-for-section-imgs;
+        background-image: url('../../../assets/pricing/tablet/hero-pricing-tablet.jpg');
+        min-height      : 49rem;
+    }
+
+    /*============================================================================================================*/
+    /*============================================================================================================*/
+
+    /*THE FEATURES SECTION*/
+    /*============================================================================================================*/
+
+    .features .container {
+        padding: 0 12rem / 76.8rem *100% 0 12rem / 76.8rem *100%;
+    }
+
+    .features .features-container {
+        padding: 0 4rem / 76.8rem *100% 0 3.8rem / 76.8rem *100%;
+    }
+
+    /*============================================================================================================*/
+    /*============================================================================================================*/
+
+    /*THE GALLERY SECTION*/
+    /*============================================================================================================*/
+
+    .grid {
+        grid-template-columns: 38.9rem / 76.8rem * 100% 37.9rem / 76.8rem * 100%;
+        grid-template-rows   : repeat(2, 1fr);
+    }
+
+
+    .grid-col__img {
+        display: none;
+    }
+
+    .grid-col {
+        min-height: 50rem;
+    }
+
+    .grid-col__img1 {
+        @include common-styles-for-gallery-imgs;
+        background-image: url('../../../assets/stories/desktop/mountains-desktop.jpg');
+    }
+
+    .grid-col__img2 {
+        @include common-styles-for-gallery-imgs;
+        background-image: url('../../../assets/stories/desktop/cityscapes-desktop.jpg');
+    }
+
+    .grid-col__img3 {
+        @include common-styles-for-gallery-imgs;
+        background-image: url('../../../assets/stories/desktop/18-days-voyage-desktop.jpg');
+    }
+
+    .grid-col__img4 {
+        @include common-styles-for-gallery-imgs;
+        background-image: url('../../../assets/stories/desktop/architecturals-desktop.jpg');
+    }
+
+    .grid-col__text-box {
+        top      : 36.1rem / 50rem * 100%;
+        left     : 3.3rem / 38.9rem * 100%;
+        min-width: 30.3rem / 38.9rem * 100%;
+    }
+
+    /*============================================================================================================*/
+    /*============================================================================================================*/
+
+    /*THE MOUNTAIN SECTION*/
+    /*============================================================================================================*/
+
+    .mountain-size--lg {
+        display: block;
+    }
+
+    .mountain-mobile {
+        display: none;
+    }
+
+    .mountain .container__img {
+        @include flex;
+        align-items: center;
+        width      : 100%;
+        min-height : 65rem;
+    }
+
+    .mountain .column {
+        min-width : 38.7rem / 76.8rem * 100%;
+        min-height: 40.6rem / 65rem * 100%;
+        padding   : 0 34.2rem / 76.8rem * 100% 0 3.9rem / 76.8rem * 100%;
+        margin    : 4rem 0;
+    }
+
+    .container__img {
+        @include common-styles-for-gallery-imgs;
+        background-image: url('../../../assets/stories/tablet/moon-of-appalacia-tablet.jpg');
+    }
+
+    .mountain .text-container {
+        width     : 100%;
+        min-height: max-content;
+        background: none;
+    }
+
+    .mountain .text-box {
+        padding: 0;
+        margin : 0;
+    }
+
+    .text-box__deadline {
+        margin-bottom: 2.4rem;
+    }
+
+    .mountain .text-box__descr {
+        margin-bottom: 2.4rem;
+    }
+
+    /*========================================================================*/
+
+    /*THE STORY SECTION(GALLERY)*/
+    .story .grid {
+        grid-template-columns: repeat(2, 38.4rem / 76.8rem * 100%);
+    }
+
+    .grid-col__img5 {
+        @include common-styles-for-gallery-imgs;
+        background-image: url('../../../assets/stories/desktop/world-tour-desktop.jpg');
+    }
+
+    .grid-col__img6 {
+        @include common-styles-for-gallery-imgs;
+        background-image: url('../../../assets/stories/desktop/unforeseen-corners-desktop.jpg');
+    }
+
+    .grid-col__img7 {
+        @include common-styles-for-gallery-imgs;
+        background-image: url('../../../assets/stories/desktop/king-on-africa-desktop.jpg');
+    }
+
+    .grid-col__img8 {
+        @include common-styles-for-gallery-imgs;
+        background-image: url('../../../assets/stories/desktop/trip-to-nowhere-desktop.jpg');
+    }
+
+    .grid-col__img9 {
+        @include common-styles-for-gallery-imgs;
+        background-image: url('../../../assets/stories/desktop/rage-of-the-sea-desktop.jpg');
+    }
+
+    .grid-col__img10 {
+        @include common-styles-for-gallery-imgs;
+        background-image: url('../../../assets/stories/desktop/running-free-desktop.jpg');
+    }
+
+    .grid-col__img11 {
+        @include common-styles-for-gallery-imgs;
+        background-image: url('../../../assets/stories/desktop/behind-the-waves-desktop.jpg');
+    }
+
+    .grid-col__img12 {
+        @include common-styles-for-gallery-imgs;
+        background-image: url('../../../assets/stories/desktop/calm-waters-desktop.jpg');
+    }
+
+    .grid-col__img13 {
+        @include common-styles-for-gallery-imgs;
+        background-image: url('../../../assets/stories/desktop/milky-way-desktop.jpg');
+    }
+
+    .grid-col__img14 {
+        @include common-styles-for-gallery-imgs;
+        background-image: url('../../../assets/stories/desktop/dark-forest-desktop.jpg');
+    }
+
+    .grid-col__img15 {
+        @include common-styles-for-gallery-imgs;
+        background-image: url('../../../assets/stories/desktop/somwarpet-desktop.jpg');
+    }
+
+    .grid-col__img16 {
+        @include common-styles-for-gallery-imgs;
+        background-image: url('../../../assets/stories/desktop/land-of-dreams-desktop.jpg');
+    }
+
+    .story .grid-col__text-box {
+        top      : 34rem / 50rem * 100%;
+        left     : 4.2rem / 38.4rem * 100%;
+        min-width: 29.9rem / 38.4rem * 100%;
+    }
+
+    /*============================================================================================================*/
+    /*============================================================================================================*/
+
+}
+
+/*============================================================================================================*/
+/*============================================================================================================*/
+
+@media screen and (min-width: 768px) {
+
+    .header .container {
+        padding: 0 4rem / 76.8rem *100%;
+    }
+
+    /*HEADER*/
+    /*============================================================================================================*/
+    .navbar {
+        @include flex-row;
+    }
+
+    .menu {
+        @include flex-row;
+        position: relative;
+        left    : 0;
+        top     : 0;
+        padding : 0;
+        z-index : 1;
+        width   : max-content;
+    }
+
+    .menu__item:not(:last-child) {
+        margin-bottom: 0;
+        margin-right : 3.7rem;
+    }
+
+    .menu__item:nth-of-type(3) {
+        margin-right: 0;
+    }
+
+    .menu__item:last-child {
+        border-top : none;
+        padding-top: 0;
+    }
+
+    .menu__link {
+        @include common-styles-for-navbar-links;
+    }
+
+    /*BUTTON FOR TABLET AND DESKTOP*/
+    .header-btn {
+        display: flex;
+    }
+
+    /*========================================================================*/
+
+    /*BUTTON FOR MOBILE */
+    .menu__btn {
+        display: none;
+    }
+
+    /*========================================================================*/
+
+    /*MENU HAMBURGER*/
+    .menu-burger {
+        display: none;
+    }
+
+    /*========================================================================*/
+
+    .body.active {
+        overflow-y: auto;
+    }
+
+    .wrapper.active {
+        background    : none;
+        opacity       : 1;
+        mix-blend-mode: normal;
+    }
+
+    /*============================================================================================================*/
+    /*============================================================================================================*/
+
+    /*THE FEATURES SECTION*/
+    /*============================================================================================================*/
+
+    .features .container {
+        padding: 0 15.6rem / 76.8rem *100% 0 15.5rem / 76.8rem *100%;
+    }
+
+    .features-grid {
+        margin: 12rem 0;
+    }
+
+    .co-features-grid {
+        margin: 11.2rem 0;
+    }
+
+    .features .features-container {
+        padding: 0 4rem / 76.8rem *100% 0 3.8rem / 76.8rem *100%;
+    }
+
+    .co-features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .co-features-grid .feature {
+        justify-content: flex-end
+    }
+
+    .co-features-grid .feature:nth-of-type(1),
+    .co-features-grid .feature:nth-of-type(2),
+    .co-features-grid .feature:nth-of-type(3),
+    .co-features-grid .feature:nth-of-type(4) {
+        margin-bottom: 7.2rem;
+    }
+
+    .co-features-grid .feature:nth-of-type(3) {
+        margin-right: 1.1rem;
+    }
+
+    .co-features-grid .feature:nth-of-type(1),
+    .co-features-grid .feature:nth-of-type(5) {
+        margin-right: 1.1rem;
+    }
+
+    .co-features-grid .feature:nth-of-type(5) {
+        margin-bottom: 0;
+    }
+
+    /*============================================================================================================*/
+    /*============================================================================================================*/
+
+    /*BETA*/
+
+    .beta .container {
+        background-image: url('../../../assets/shared/tablet/bg-beta-tablet.jpg');
+        min-height      : 28rem;
+        padding         : 0;
+    }
+
+    .beta-rectangle-decor {
+        @include common-styles-for-rectangle-decor-tab;
+    }
+
+    .beta .text-box {
+        @include flex-row;
+        justify-content: space-between;
+        max-width      : 111rem;
+        padding        : 0 4rem / 76.8rem * 100% 0 3.9rem / 76.8rem * 100%;
+        margin         : 0 auto;
+    }
+
+    .beta .text-box__heading {
+        margin-bottom : 0;
+        letter-spacing: $letter-spacing-large;
+        max-width     : 40rem;
+    }
+
+    .beta .arrow-link {
+        width: 16.8rem;
+    }
+
+    /*============================================================================================================*/
+    /*============================================================================================================*/
+
+    /*THE PRICING SECTION*/
+    /*============================================================================================================*/
+
+    .pricing .container {
+        padding: 11.2rem 4rem / 76.8rem * 100% 6.4rem 3.9rem / 76.8rem * 100%;
+    }
+
+    .pricing-grid__item {
+        @include grid;
+        grid-template-columns: repeat(2, 1fr);
+        min-width            : 68.9rem / 76.8rem * 100%;
+    }
+
+    .pricing-grid-rectangle-decor {
+        @include common-styles-for-rectangle-decor-tab;
+    }
+
+    .pricing-grid__text-box {
+        padding   : 0 0 0 4rem;
+        margin    : 4rem 0 3.2rem 0;
+        text-align: left;
+    }
+
+    .pricing-grid__btn {
+        margin   : 0 auto 4rem 4rem;
+        min-width: 27rem;
+    }
+
+    .pricing-grid__price-box {
+        align-items  : flex-end;
+        align-self   : flex-start;
+        padding-right: 4.8rem;
+        margin-top   : 4rem;
+        margin-bottom: 0;
+    }
+
+    /*============================================================================================================*/
+    /*============================================================================================================*/
+
+    /*THE COMPARE SECTION*/
+    /*============================================================================================================*/
+
+    .compare .container {
+        padding: 0 4rem / 76.8rem * 100% 0 3.9rem / 76.8rem * 100%;
+    }
+
+    .table__caption {
+        @include flex;
+        justify-content: center;
+        margin-bottom  : 6.4rem;
+    }
+
+    .table {
+        margin-bottom: 11.2rem;
+    }
+
+    .table__head {
+        padding      : 0 2.4rem / 68.9rem * 100%;
+        margin-bottom: 2.35rem;
+    }
+
+    .table__head>.td-1 {
+        margin-bottom: 2.35rem;
+        margin-right : auto;
+    }
+
+    .table__head>.td-2 {
+        @include flex;
+        @include flex-row;
+        justify-content: center;
+        align-items    : flex-start;
+    }
+
+    .td-2 span:not(:last-child) {
+        margin-right: 10.6rem;
+    }
+
+    /*========================================================================*/
+
+    .table__body {
+        @include flex;
+        @include flex-row;
+        padding: 0 6.2rem / 68.9rem * 100% 0 2.4rem / 68.9rem * 100%;
+    }
+
+    .table__body>.td-1 {
+        margin-bottom: 2.35rem;
+        margin-right : auto;
+    }
+
+    .table__body .td-2 {
+        @include flex;
+        @include flex-row;
+        align-items: flex-start;
+    }
+
+    .td-2__column {
+        @include flex;
+        @include flex-column;
+        align-items    : center;
+        justify-content: center;
+        margin-bottom  : 0;
+    }
+
+    .table__body .td-2__column:not(:last-child) {
+        margin-right: 12.4rem;
+    }
+
+    .td-2__column-plan {
+        display: none;
+    }
+
+    /*============================================================================================================*/
+    /*============================================================================================================*/
+
+    /*FOOTER*/
+    /*============================================================================================================*/
+
+    .footer .container {
+        @include flex;
+        @include flex-row;
+        justify-content: space-between;
+        padding        : 0 4rem / 76.8rem * 100% 0 3.9rem / 76.8rem *100%;
+    }
+
+    .footer {
+        padding: 6.4rem 0;
+    }
+
+    .footer__grid {
+        padding: 0;
+        margin : 0;
+    }
+
+    /*SOCIAL LINKS*/
+    .footer__grid-socials {
+        justify-content: flex-start;
+        margin-bottom  : 0;
+    }
+
+    /*========================================================================*/
+
+    /*NAVBAR*/
+    .footer-menu {
+        @include flex-row;
+        grid-area    : 2 / 1 / 2 / 1;
+        margin-bottom: 7.2rem;
+    }
+
+    .footer-menu__item:not(:last-child) {
+        margin-right : 2.6rem;
+        margin-bottom: 0;
+    }
+
+    /*========================================================================*/
+
+    /*COPYRIGHT*/
+    .footer__copyright {
+        @include flex;
+        @include flex-column;
+        justify-content: space-between;
+        align-items    : flex-end;
+        width          : max-content;
+        margin         : 0;
+    }
+
+    .footer__copyright .arrow-link {
+        width        : 100%;
+        margin-bottom: 3.4rem;
+    }
+
+    .footer__copyright-text {
+        font-family   : $ff-dm-sans-regular;
+        font-size     : $font-size-body;
+        line-height   : 2rem;
+        color         : $opaque-grey;
+        text-transform: capitalize;
+    }
+
+    /*========================================================================*/
+
+    /*============================================================================================================*/
+    /*============================================================================================================*/
+
+}
+
+/*============================================================================================================*/
+/*============================================================================================================*/

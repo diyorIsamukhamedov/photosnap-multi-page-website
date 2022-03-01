@@ -1,0 +1,18 @@
+@import "colors";
+
+/*CSS NORMALIZE*/
+
+html,
+body {
+    width     : 100vw;
+    min-height: 100%;
+}
+
+body {
+    font-family     : $ff-dm-sans-regular;
+    min-width       : 320px;
+    overflow-x      : hidden;
+    background-color: $primary-color;
+}
+
+/* ==================================================================================================================== */

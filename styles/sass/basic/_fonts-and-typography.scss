@@ -1,0 +1,62 @@
+/* FONT FAMILIES */
+
+/* ==================================================================================================================== */
+
+//FONTS
+
+@font-face {
+    font-family : 'DM Sans Regular';
+    font-display: swap;
+    src         : url("../../../fonts/dmsans-regular/DMSans-Regular.eot?") format("eot");
+    src         : url("../../../fonts/dmsans-regular/DMSans-Regular.woff") format("woff"),
+        url("../../../fonts/dmsans-regular/DMSans-Regular.woff2") format("woff2"),
+        url("../../../fonts/dmsans-regular/DMSans-Regular.ttf") format("truetype"),
+        url("../../../fonts/dmsans-regular/DMSans-Regular.svg") format("svg");
+    font-weight: normal;
+    font-style : normal;
+}
+
+@font-face {
+    font-family : 'DM Sans Bold';
+    font-display: swap;
+    src         : url("../../../fonts/dmsans-bold/DMSans-Bold.eot?") format("eot");
+    src         : url("../../../fonts/Roboto-Mono-regular/RobotoMono-Regular.woff") format("woff"),
+        url("../../../fonts/dmsans-bold/DMSans-Bold.woff") format("woff2"),
+        url("../../../fonts/dmsans-bold/DMSans-Bold.woff2") format("truetype"),
+        url("../../../fonts/dmsans-bold/DMSans-Bold.svg") format("svg");
+    font-weight: bold;
+    font-style : normal;
+}
+
+/* ==================================================================================================================== */
+
+// ==================================================================================================================== //
+
+//FONT VARIABLES
+
+// ==================================================================================================================== //
+
+$ff-dm-sans-regular: 'DM Sans Regular';
+$ff-dm-sans-bold   : 'DM Sans Bold';
+
+// ==================================================================================================================== //
+
+// ==================================================================================================================== //
+
+//TYPOGRAPHY VARIABLES
+
+$font-size-body        : 15px;
+$font-size-large       : 40px;
+$font-size-medium      : 24px;
+$font-size-small       : 18px;
+$font-size-extra-small : 12px;
+
+$line-height-large : 48px;
+$line-height-medium: 25px;
+$line-height-small : 16px;
+
+
+$letter-spacing-large: 4.17px;
+$letter-spacing-small: 2px;
+
+// ==================================================================================================================== //

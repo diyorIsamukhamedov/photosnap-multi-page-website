@@ -1,0 +1,329 @@
+/*THE PRICING SECTION*/
+/*============================================================================================================*/
+
+.toogle-container {
+    @include flex;
+    @include flex-row;
+    justify-content: center;
+    align-items    : center;
+    margin-bottom  : 4rem;
+}
+
+.rate-monthly,
+.rate-yearly {
+    font-family: $ff-dm-sans-bold;
+    font-size  : $font-size-small;
+    line-height: $line-height-medium;
+}
+
+.rate-monthly {
+    color: $secondary-color;
+}
+
+.rate-yearly {
+    color: rgb(163, 163, 163);
+}
+
+.rate-monthly.active {
+    color: rgb(163, 163, 163);
+}
+
+.rate-yearly.active {
+    color: $secondary-color;
+}
+
+.toggle {
+    display : inline-block;
+    position: relative;
+    width   : 6.4rem;
+    height  : 3.2rem;
+    margin  : 0 3.2rem;
+}
+
+.toggle input {
+    display: none;
+}
+
+.round-button {
+    @include transition;
+    display         : block;
+    position        : absolute;
+    top             : 0;
+    left            : 0;
+    bottom          : 0;
+    right           : 0;
+    width           : 100%;
+    background-color: rgb(163, 163, 163);
+    border-radius   : 1.6rem;
+    cursor          : pointer;
+}
+
+.round-button:before {
+    content: "";
+    @include transition;
+    display         : block;
+    position        : absolute;
+    height          : 2.4rem;
+    width           : 2.4rem;
+    border-radius   : 50%;
+    left            : 0.4rem;
+    bottom          : 0.4rem;
+    background-color: $secondary-color;
+}
+
+input:checked+.round-button {
+    background-color: $secondary-color;
+}
+
+input:checked+.round-button:before {
+    transform       : translateX(3.2rem);
+    background-color: $primary-color;
+}
+
+/*========================================================================*/
+
+/*THE PRICING SECTION*/
+
+.pricing .container {
+    padding: 6.4rem 2.8rem / 37.5rem * 100% 6.4rem 2.9rem / 37.5rem * 100%;
+}
+
+.pricing-grid {
+    @include grid;
+    grid-template-columns: 1fr;
+}
+
+.pricing-grid__item {
+    @include flex;
+    @include flex-column;
+    justify-content: center;
+    align-items    : center;
+    text-align     : center;
+    min-width      : 31.8rem / 37.5rem * 100%;
+}
+
+.pricing-grid__item:not(:last-child) {
+    margin-bottom: 2.4rem;
+}
+
+.pricing-grid__item-grey {
+    background-color: $opaque-grey;
+}
+
+.pricing-grid__item-black {
+    position        : relative;
+    background-color: $secondary-color;
+}
+
+.pricing-grid-rectangle-decor {
+    position        : absolute;
+    top             : 0;
+    left            : 0;
+    width           : 100%;
+    height          : 0.6rem;
+    background-image: $main-accent;
+}
+
+.pricing-grid__text-box {
+    padding: 0 2.2rem / 31.8rem * 100% 0 2.1rem / 31.8rem * 100%;
+    margin : 5.6rem 0 4rem 0;
+}
+
+.pricing-grid__heading {
+    font-family  : $ff-dm-sans-bold;
+    font-size    : $font-size-medium;
+    line-height  : $line-height-medium;
+    margin-bottom: 1.8rem;
+}
+
+.pricing-grid__heading--black {
+    color: $secondary-color;
+}
+
+.pricing-grid__heading--white {
+    color: $primary-color;
+}
+
+.yearly,
+.yearly-text {
+    display: none;
+}
+
+.monthly.active,
+.monthly-text.active {
+    display: none;
+}
+
+.yearly.active,
+.yearly-text.active {
+    display: block;
+}
+
+.pricing-grid__descr,
+.monthly-text,
+.yearly-text {
+    font-family: $ff-dm-sans-regular;
+    font-size  : $font-size-body;
+    line-height: $line-height-medium;
+}
+
+.pricing-grid__descr-grey,
+.monthly-text--grey,
+.yearly-text--grey {
+    color: $opaque-black;
+}
+
+.pricing-grid__descr-white {
+    color: $opaque-grey;
+}
+
+.pricing-grid__price-box {
+    @include flex;
+    @include flex-column;
+    justify-content: center;
+    align-items    : center;
+    margin-bottom  : 4rem;
+}
+
+.monthly,
+.yearly {
+    font-family   : $ff-dm-sans-bold;
+    font-size     : $font-size-large;
+    line-height   : $line-height-large;
+    letter-spacing: $letter-spacing-large;
+}
+
+.monthly--black,
+.yearly--black {
+    color: $secondary-color;
+}
+
+.monthly--white,
+.yearly--white {
+    color: $primary-color
+}
+
+.monthly-text--white,
+.yearly-text--white {
+    color         : $opaque-grey;
+    text-transform: lowercase;
+}
+
+.pricing-grid__btn {
+    @include transition;
+    font-family   : $ff-dm-sans-bold;
+    font-size     : $font-size-extra-small;
+    line-height   : $line-height-small;
+    letter-spacing: $letter-spacing-small;
+    width         : 24.5rem / 31.8rem * 100%;
+    min-height    : 4rem;
+    margin-bottom : 4rem;
+    border        : none;
+    cursor        : pointer;
+}
+
+.pricing-grid__btn--black {
+    color           : $primary-color;
+    background-color: $secondary-color;
+}
+
+.pricing-grid__btn--white {
+    color           : $secondary-color;
+    background-color: $primary-color;
+}
+
+.pricing-grid__btn--white:hover {
+    background-color: $opaque-grey;
+}
+
+.pricing-grid__btn--black:hover {
+    color           : $secondary-color;
+    background-color: rgb(153, 151, 151);
+}
+
+/*========================================================================*/
+
+/*THE COMPARE SECTION*/
+
+.compare .container {
+    padding: 0 2.8rem / 37.5rem * 100% 0 2.9rem / 37.5rem * 100%;
+}
+
+.table__caption {
+    display       : none;
+    font-family   : $ff-dm-sans-bold;
+    font-size     : $font-size-large;
+    line-height   : $line-height-large;
+    letter-spacing: $letter-spacing-large;
+    color         : $secondary-color;
+}
+
+.table {
+    margin-bottom: 6.4rem;
+}
+
+.table__head {
+    @include flex;
+    @include flex-row;
+    border-bottom: 1px solid $secondary-color;
+    margin-bottom: 2.3rem;
+}
+
+.table__head>.td-1 {
+    margin-bottom: 2.3rem;
+}
+
+.table__head>.td-2 {
+    display: none;
+}
+
+.td-1>span,
+.table__head .td-2>span {
+    @include uppercase;
+    font-family   : $ff-dm-sans-bold;
+    font-size     : $font-size-extra-small;
+    line-height   : $line-height-small;
+    letter-spacing: $letter-spacing-small;
+    color         : $secondary-color;
+}
+
+/*========================================================================*/
+
+.table__body {
+    border-bottom: 1px solid $opaque-grey;
+}
+
+.table__body:not(:last-child) {
+    margin-bottom: 2.35rem;
+}
+
+.table__body>.td-1 {
+    margin-bottom: 1.6rem;
+}
+
+.table__body .td-2 {
+    @include flex;
+    @include flex-row;
+    align-items: flex-start;
+    color      : $opaque-black;
+}
+
+.td-2__column {
+    @include flex;
+    @include flex-column;
+    align-items    : flex-start;
+    justify-content: center;
+    margin-right   : auto;
+    margin-bottom  : 2.4rem;
+}
+
+.td-2__column-plan {
+    font-family   : $ff-dm-sans-bold;
+    font-size     : 1rem;
+    line-height   : 13.02px;
+    letter-spacing: 1.67px;
+    margin-bottom : 0.8rem;
+}
+
+/*============================================================================================================*/
+/*============================================================================================================*/

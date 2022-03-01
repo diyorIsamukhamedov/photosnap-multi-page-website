@@ -1,0 +1,415 @@
+/* MEDIA QUERIES FOR DESKTOP SCREEN SIZES */
+
+@media screen and (min-width: 1024px) {
+    /*THE SECTIONS*/
+
+    /*THE CREATE, STORIES, EVERYONE, HERO AND BETA SECTIONS*/
+    /*============================================================================================================*/
+
+    /*TEXT CONTENT*/
+
+    .text-container {
+        position: relative;
+        width   : 61rem / 144rem * 100%;
+    }
+
+    .create .text-box,
+    .hero .text-box {
+        position: static;
+    }
+
+    .create-rectangle-decor,
+    .hero-rectangle-decor {
+        position: absolute;
+        left    : 0;
+        width   : 0.6rem;
+    }
+
+    .create-rectangle-decor {
+        top   : 17.3rem / 65rem * 100%;
+        height: 30.4rem;
+    }
+
+    .hero-rectangle-decor {
+        top   : 17.3rem / 49rem * 100%;
+        height: 14.4rem;
+    }
+
+    /*========================================================================*/
+
+    /*IMAGES CONTENT*/
+
+    .create__img,
+    .stories__img,
+    .everyone__img,
+    .hero__img,
+    .hero__img2 {
+        width: 83rem / 144rem * 100%;
+    }
+
+    .create__img {
+        background-image: url('../../../assets/home/desktop/create-and-share-desktop.jpg');
+    }
+
+    .stories__img {
+        background-image: url('../../../assets/home/desktop/beautiful-stories-desktop.jpg');
+    }
+
+    .everyone__img {
+        background-image: url('../../../assets/home/desktop/designed-for-everyone-desktop.jpg');
+    }
+
+    .hero__img {
+        background-image: url('../../../assets/features/desktop/hero-desktop.jpg');
+    }
+
+    .hero__img2 {
+        background-image: url('../../../assets/pricing/desktop/hero-pricing-desktop.jpg');
+    }
+
+    /*============================================================================================================*/
+    /*============================================================================================================*/
+
+    /*THE GALLERY SECTION*/
+    /*============================================================================================================*/
+
+    .story .grid,
+    .grid {
+        grid-template-columns: repeat(4, 36rem / 144rem * 100%);
+        grid-template-rows   : 1fr;
+    }
+
+    .grid-col__text-box {
+        left     : 3.3rem / 36rem * 100%;
+        min-width: 28rem / 36rem * 100%;
+    }
+
+    .story .grid-col__text-box {
+        top      : 34rem / 50rem * 100%;
+        left     : 4rem / 36rem * 100%;
+        min-width: 28rem / 38.4rem * 100%;
+    }
+
+    /*============================================================================================================*/
+    /*============================================================================================================*/
+
+    /*THE FEATURES SECTION*/
+    /*============================================================================================================*/
+
+    .features .container {
+        padding: 0 16.5rem / 144rem *100%;
+    }
+
+    .features-grid,
+    .co-features-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .co-features-grid {
+        margin: 16rem 0;
+    }
+
+    .co-features-grid .feature:nth-of-type(1),
+    .co-features-grid .feature:nth-of-type(2),
+    .co-features-grid .feature:nth-of-type(3) {
+        margin-bottom: 10.4rem;
+    }
+
+    .features .feature,
+    .co-features-grid .feature:nth-of-type(4) {
+        margin-bottom: 0;
+    }
+
+    .features .feature:last-child {
+        align-self: flex-start;
+    }
+
+    .features .feature:nth-of-type(2) {
+        align-self: flex-end;
+    }
+
+    .features .feature:not(:last-child) {
+        margin-right: 3rem;
+    }
+
+    /*============================================================================================================*/
+    /*============================================================================================================*/
+
+    /*THE MOUNTAIN SECTION*/
+    /*============================================================================================================*/
+
+    .mountain .column {
+        padding: 0 94.1rem / 144rem * 100% 0 11.2rem / 144rem * 100%;
+    }
+
+    .mountain .container__img {
+        background-image: url('../../../assets/stories/desktop/moon-of-appalacia-desktop.jpg');
+    }
+
+    .mountain .container__img.active {
+        background-image: radial-gradient(68.48% 68.48% at 0% 100%, #FFC593 0%,
+                rgba(188, 113, 152, 0.496968) 52.36%, rgba(90, 119, 255, 0.0001) 100%),
+            url('../../../assets/stories/desktop/moon-of-appalacia-desktop.jpg');
+    }
+
+    /*============================================================================================================*/
+    /*============================================================================================================*/
+
+    /*BETA*/
+
+    .beta .container {
+        background-image: url('../../../assets/shared/desktop/bg-beta-desktop.jpg');
+        justify-content : center;
+    }
+
+    .beta-rectangle-decor {
+        @include common-styles-for-rectangle-decor-tab;
+    }
+
+    .beta .text-box {
+        @include flex-row;
+        justify-content: space-between;
+    }
+
+    .beta .text-box__heading {
+        margin-bottom : 0;
+        letter-spacing: $letter-spacing-large;
+        max-width     : 40rem;
+    }
+
+    .beta .arrow-link {
+        width: 16.8rem;
+    }
+
+    /*============================================================================================================*/
+    /*============================================================================================================*/
+
+    /*THE PRICING SECTION*/
+    /*============================================================================================================*/
+
+    .pricing .container {
+        padding  : 12rem 16.5rem / 144rem * 100% 16rem / 144rem * 100% 16.5rem / 144rem * 100%;
+        min-width: 111rem;
+
+    }
+
+    .pricing-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .pricing-grid__item {
+        @include flex;
+        @include flex-column;
+        justify-content: center;
+        align-items    : center;
+        text-align     : center;
+        min-width      : 35rem / 144rem * 100%;
+        max-height     : 40.7rem;
+    }
+
+    .pricing-grid__item:first-child,
+    .pricing-grid__item:last-child {
+        transform: translateY(4.2rem);
+    }
+
+    .pricing-grid__item-black {
+        min-height: 47rem;
+    }
+
+    .pricing-grid__item:not(:last-child) {
+        margin-right : 3rem;
+        margin-bottom: 0;
+    }
+
+    .pricing-grid__item:last-child {
+        margin-right: 3rem;
+    }
+
+    .pricing-grid-rectangle-decor {
+        position        : absolute;
+        top             : 0;
+        left            : 0;
+        width           : 100%;
+        height          : 0.6rem;
+        background-image: $main-accent;
+    }
+
+    .pricing-grid__text-box {
+        padding   : 0 4rem / 35rem * 100% 0 4rem / 35rem * 100%;
+        margin    : 5.6rem 0 4rem 0;
+        text-align: center;
+    }
+
+    .pricing-grid__text-box:nth-child(2) {
+        margin-top: 8.2rem;
+    }
+
+    .pricing-grid__btn {
+        margin   : 0 auto 4rem auto;
+        min-width: 27rem / 35rem * 100%;
+    }
+
+    .pricing-grid__price-box {
+        justify-content: center;
+        align-items    : center;
+        align-self     : center;
+        padding-right  : 0;
+        margin-top     : 0;
+        margin-bottom  : 4rem;
+    }
+
+    /*============================================================================================================*/
+    /*============================================================================================================*/
+
+    /*THE COMPARE SECTION*/
+    /*============================================================================================================*/
+
+    .compare .container {
+        max-width: 73.1rem;
+        padding  : 0;
+        margin   : 0 auto;
+    }
+
+    .table__caption {
+        margin-bottom  : 5.6rem;
+    }
+
+    .table {
+        margin-bottom: 16rem;
+    }
+
+    .table__head {
+        margin-bottom: 2.3rem;
+    }
+
+    .table__head>.td-1 {
+        margin-bottom: 2.3rem;
+    }
+
+    /*============================================================================================================*/
+    /*============================================================================================================*/
+
+    /*FOOTER*/
+    /*============================================================================================================*/
+
+    .footer__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*SOCIAL LINKS*/
+    .footer__grid-socials {
+        justify-content: flex-start;
+        align-items    : flex-end;
+    }
+
+    /*========================================================================*/
+
+    /*FOOTER NAVBAR*/
+    .footer-menu {
+        @include flex-column;
+        grid-area    : 1 / 2 / 3 / 3;
+        margin-bottom: 0;
+        align-items  : flex-start;
+        margin-left  : 11rem;
+    }
+
+    .footer-menu__item:not(:last-child) {
+        margin-right : 0;
+        margin-bottom: 1.9rem;
+    }
+
+    /*========================================================================*/
+
+    /*COPYRIGHT*/
+    .footer__copyright .arrow-link {
+        margin-bottom: 0;
+    }
+
+    /*========================================================================*/
+
+    /*============================================================================================================*/
+    /*============================================================================================================*/
+
+}
+
+/*============================================================================================================*/
+/*============================================================================================================*/
+
+@media screen and (min-width: 1440px) {
+
+    .header .container,
+    .features .container,
+    .hero .container {
+        padding: 0;
+        margin : 0 auto;
+    }
+
+    .beta .container {
+        padding: 0 16.5rem / 144rem * 100%;
+        margin : 0 auto;
+    }
+
+    /*THE SECTIONS*/
+
+    /*THE CREATE, STORIES, EVERYONE AND HERO SECTIONS*/
+    /*============================================================================================================*/
+
+
+    /*TEXT CONTENT*/
+
+    .text-box,
+    .hero .text-box {
+        padding: 0 11.1rem 0 11.2rem;
+    }
+
+    /*============================================================================================================*/
+    /*============================================================================================================*/
+
+    /*BETA*/
+
+    .beta .text-box {
+        padding: 0;
+    }
+
+    /*============================================================================================================*/
+    /*============================================================================================================*/
+
+    /*THE PRICING SECTION*/
+
+    .pricing .container {
+        max-width: 200rem;
+        margin   : 0 auto;
+    }
+
+    /*============================================================================================================*/
+    /*============================================================================================================*/
+
+    /*FOOTER*/
+    /*============================================================================================================*/
+
+    .footer .container {
+        padding: 0;
+    }
+
+    /*============================================================================================================*/
+    /*============================================================================================================*/
+
+}
+
+@media screen and (min-width: 2000px) {
+
+    /*THE SECTIONS*/
+
+    /*THE CREATE, STORIES AND EVERYONE SECTIONS*/
+    /*============================================================================================================*/
+
+    /*TEXT CONTENT*/
+    .text-box {
+        max-width: 60rem;
+        margin   : 0 auto;
+    }
+
+    /*============================================================================================================*/
+    /*============================================================================================================*/
+
+}

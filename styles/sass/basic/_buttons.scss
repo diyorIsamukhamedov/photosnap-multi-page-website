@@ -1,0 +1,50 @@
+/*BUTTONS*/
+/*============================================================================================================*/
+
+%common-styles-for-btns {
+    @include flex;
+    @include uppercase;
+    @include transition;
+    justify-content : center;
+    align-items     : center;
+    font-family     : $ff-dm-sans-bold;
+    background-color: $secondary-color;
+    color           : $primary-color;
+}
+
+.menu__btn,
+.header-btn {
+    @extend %common-styles-for-btns;
+}
+
+/*HEADER BUTTON FOR MOBILE */
+.menu__btn {
+    font-size     : $font-size-body;
+    letter-spacing: 2.5px;
+    width         : 31rem;
+    height        : 4.8rem;
+}
+
+/*========================================================================*/
+
+/*HEADER BUTTON FOR TABLET AND DESKTOP*/
+.header-btn {
+    font-size     : $font-size-extra-small;
+    line-height   : $line-height-small;
+    letter-spacing: $letter-spacing-small;
+    width         : 15.8rem;
+    height        : 4rem;
+}
+
+/*========================================================================*/
+
+/*WHEN HOVERED*/
+.menu__btn:hover,
+.header-btn:hover {
+    background-color: $light-grey;
+    color           : $secondary-color;
+}
+
+/*============================================================================================================*/
+/*============================================================================================================*/
+
