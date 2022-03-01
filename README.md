@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL:(https://photosnap-multi-page-website-zeta.vercel.app/)
+- Live Site URL:(https://photosnap-multi-page-website-built-by-diyor-isa.vercel.app/)
 
 ## My process
 
