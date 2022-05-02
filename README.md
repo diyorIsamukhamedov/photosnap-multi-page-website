@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL:(https://photosnap-multi-page-website-by-diyor-isa.vercel.app/)
+- Live Site URL:(https://photosnap-multi-page-website-built-by-diyor-isa.vercel.app/)
 
 ## My process
 
@@ -45,4 +45,4 @@ Users should be able to:
 
 ## Author
 
-- GitHub - (https://github.com/Diyor-Isa)
+- GitHub - (https://github.com/CyberGenCoder)
