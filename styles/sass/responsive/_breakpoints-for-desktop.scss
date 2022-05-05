@@ -1,4 +1,5 @@
 /* MEDIA QUERIES FOR DESKTOP SCREEN SIZES */
+@use "sass:math";
 
 @media screen and (min-width: 1024px) {
     /*THE SECTIONS*/
@@ -10,7 +11,7 @@
 
     .text-container {
         position: relative;
-        width   : 61rem / 144rem * 100%;
+        width   : math.div(61rem, 144rem) * 100%;
     }
 
     .create .text-box,
@@ -26,12 +27,12 @@
     }
 
     .create-rectangle-decor {
-        top   : 17.3rem / 65rem * 100%;
+        top   : math.div(17.3rem, 65rem) * 100%;
         height: 30.4rem;
     }
 
     .hero-rectangle-decor {
-        top   : 17.3rem / 49rem * 100%;
+        top   : math.div(17.3rem, 49rem) * 100%;
         height: 14.4rem;
     }
 
@@ -44,7 +45,7 @@
     .everyone__img,
     .hero__img,
     .hero__img2 {
-        width: 83rem / 144rem * 100%;
+        width: math.div(83rem, 144rem) * 100%;
     }
 
     .create__img {
@@ -75,19 +76,19 @@
 
     .story .grid,
     .grid {
-        grid-template-columns: repeat(4, 36rem / 144rem * 100%);
+        grid-template-columns: repeat(4, math.div(36rem, 144rem) * 100%);
         grid-template-rows   : 1fr;
     }
 
     .grid-col__text-box {
-        left     : 3.3rem / 36rem * 100%;
-        min-width: 28rem / 36rem * 100%;
+        left     : math.div(3.3rem, 36rem) * 100%;
+        min-width: math.div(28rem, 36rem) * 100%;
     }
 
     .story .grid-col__text-box {
-        top      : 34rem / 50rem * 100%;
-        left     : 4rem / 36rem * 100%;
-        min-width: 28rem / 38.4rem * 100%;
+        top      : math.div(34rem, 50rem) * 100%;
+        left     : math.div(4rem, 36rem) * 100%;
+        min-width: math.div(28rem, 38.4rem) * 100%;
     }
 
     /*============================================================================================================*/
@@ -97,7 +98,7 @@
     /*============================================================================================================*/
 
     .features .container {
-        padding: 0 16.5rem / 144rem *100%;
+        padding: 0 math.div(16.5rem, 144rem) *100%;
     }
 
     .features-grid,
@@ -139,7 +140,7 @@
     /*============================================================================================================*/
 
     .mountain .column {
-        padding: 0 94.1rem / 144rem * 100% 0 11.2rem / 144rem * 100%;
+        padding: 0 math.div(94.1rem, 144rem) * 100% 0 math.div(11.2rem, 144rem) * 100%;
     }
 
     .mountain .container__img {
@@ -188,7 +189,7 @@
     /*============================================================================================================*/
 
     .pricing .container {
-        padding  : 12rem 16.5rem / 144rem * 100% 16rem / 144rem * 100% 16.5rem / 144rem * 100%;
+        padding  : 12rem math.div(16.5rem, 144rem) * 100% math.div(16rem, 144rem) * 100% math.div(16.5rem, 144rem) * 100%;
         min-width: 111rem;
 
     }
@@ -203,7 +204,7 @@
         justify-content: center;
         align-items    : center;
         text-align     : center;
-        min-width      : 35rem / 144rem * 100%;
+        min-width      : math.div(35rem, 144rem) * 100%;
         max-height     : 40.7rem;
     }
 
@@ -235,7 +236,7 @@
     }
 
     .pricing-grid__text-box {
-        padding   : 0 4rem / 35rem * 100% 0 4rem / 35rem * 100%;
+        padding   : 0 math.div(4rem, 35rem) * 100% 0 math.div(4rem, 35rem) * 100%;
         margin    : 5.6rem 0 4rem 0;
         text-align: center;
     }
@@ -246,7 +247,7 @@
 
     .pricing-grid__btn {
         margin   : 0 auto 4rem auto;
-        min-width: 27rem / 35rem * 100%;
+        min-width: math.div(27rem, 35rem) * 100%;
     }
 
     .pricing-grid__price-box {
@@ -345,7 +346,7 @@
     }
 
     .beta .container {
-        padding: 0 16.5rem / 144rem * 100%;
+        padding: 0 math.div(16.5rem, 144rem) * 100%;
         margin : 0 auto;
     }
 

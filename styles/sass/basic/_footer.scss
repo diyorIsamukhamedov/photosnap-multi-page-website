@@ -1,9 +1,6 @@
 /*FOOTER*/
 /*============================================================================================================*/
-
-%common-styles-for-social-links {
-    @include bg-no-repeat;
-}
+@use "sass:math";
 
 .footer {
     background-color: $secondary-color;
@@ -13,7 +10,7 @@
 .footer__grid {
     @include grid;
     grid-template-columns: 1fr;
-    padding              : 0 3.2rem / 37.5rem * 100% 0 3.3rem / 37.5rem * 100%;
+    padding              : 0 math.div(3.2rem, 37.5rem) * 100% 0 math.div(3.3rem, 37.5rem) * 100%;
     margin               : 0 auto 11.9rem auto;
     width                : max-content;
 }
@@ -59,35 +56,76 @@
     height : 100%;
 }
 
-.facebook>svg:hover {
-    path {
-        fill: $main-accent;
-    }
+.facebook>svg:hover stop:first-child {
+    stop-color: #63AFDB;
 }
 
-.youtube>svg:hover {
-    path {
-        fill: linear-gradient(45deg, #D3205A 0%, #FF5A5A 100%);
-    }
+.facebook>svg:hover stop:last-child {
+    stop-color: #6028F1;
 }
 
-.twitter>svg:hover {
-    path {
-        fill: linear-gradient(225deg, #65FFEB 0%, #27718A 100%);
-    }
+.youtube>svg:hover stop:first-child {
+    stop-color: #D3205A;
 }
 
-.pinterest>svg:hover {
-    path {
-        fill: linear-gradient(225deg, #F6C683 0%, #DE3838 100%);
-    }
+.youtube>svg:hover stop:last-child {
+    stop-color: #FF5A5A;
 }
 
-.instagram>svg:hover {
-    path {
-        fill: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
-    }
+.twitter>svg:hover stop:first-child {
+    stop-color: #65FFEB;
 }
+
+.twitter>svg:hover stop:last-child {
+    stop-color: #27718A;
+}
+
+.pinterest>svg:hover stop:first-child {
+    stop-color: #F6C683;
+}
+
+.pinterest>svg:hover stop:last-child {
+    stop-color: #DE3838;
+}
+
+.instagram>svg:hover stop:first-child {
+    stop-color: #FFC593;
+}
+
+.instagram>svg:hover stop:nth-child(2) {
+    stop-color: #BC7198;
+}
+
+.instagram>svg:hover stop:last-child {
+    stop-color: #5A77FF;
+}
+
+// .youtube>svg:hover stop:first-child {
+//     stop-color: #D3205A;
+// }
+
+// .youtube>svg:hover stop:last-child {
+//     stop-color: #FF5A5A;
+// }
+
+// .twitter>svg:hover stop:first-child {
+//     stop-color: #65FFEB;
+// }
+// .twitter>svg:hover stop:last-child {
+//     stop-color: #27718A;
+// }
+
+// .twitter>svg:hover>path {
+//         fill: linear-gradient(225deg, #65FFEB 0%, #27718A 100%);
+// }
+
+// .pinterest>svg:hover>path {
+//         fill: linear-gradient(225deg, #F6C683 0%, #DE3838 100%);
+// }
+
+// .instagram>svg:hover>path {
+//         fill: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+// }
 
 /*========================================================================*/
 

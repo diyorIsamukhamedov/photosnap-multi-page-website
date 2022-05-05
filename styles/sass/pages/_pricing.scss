@@ -1,5 +1,6 @@
 /*THE PRICING SECTION*/
 /*============================================================================================================*/
+@use "sass:math";
 
 .toogle-container {
     @include flex;
@@ -85,7 +86,7 @@ input:checked+.round-button:before {
 /*THE PRICING SECTION*/
 
 .pricing .container {
-    padding: 6.4rem 2.8rem / 37.5rem * 100% 6.4rem 2.9rem / 37.5rem * 100%;
+    padding: 6.4rem math.div(2.8rem, 37.5rem) * 100% 6.4rem math.div(2.9rem, 37.5rem) * 100%;
 }
 
 .pricing-grid {
@@ -99,7 +100,7 @@ input:checked+.round-button:before {
     justify-content: center;
     align-items    : center;
     text-align     : center;
-    min-width      : 31.8rem / 37.5rem * 100%;
+    min-width      : math.div(31.8rem, 37.5rem) * 100%;
 }
 
 .pricing-grid__item:not(:last-child) {
@@ -125,7 +126,7 @@ input:checked+.round-button:before {
 }
 
 .pricing-grid__text-box {
-    padding: 0 2.2rem / 31.8rem * 100% 0 2.1rem / 31.8rem * 100%;
+    padding: 0 math.div(2.2rem, 31.8rem) * 100% 0 math.div(2.1rem, 31.8rem) * 100%;
     margin : 5.6rem 0 4rem 0;
 }
 
@@ -215,7 +216,7 @@ input:checked+.round-button:before {
     font-size     : $font-size-extra-small;
     line-height   : $line-height-small;
     letter-spacing: $letter-spacing-small;
-    width         : 24.5rem / 31.8rem * 100%;
+    width         : math.div(24.5rem, 31.8rem) * 100%;
     min-height    : 4rem;
     margin-bottom : 4rem;
     border        : none;
@@ -246,7 +247,7 @@ input:checked+.round-button:before {
 /*THE COMPARE SECTION*/
 
 .compare .container {
-    padding: 0 2.8rem / 37.5rem * 100% 0 2.9rem / 37.5rem * 100%;
+    padding: 0 math.div(2.8rem, 37.5rem) * 100% 0 math.div(2.9rem, 37.5rem) * 100%;
 }
 
 .table__caption {

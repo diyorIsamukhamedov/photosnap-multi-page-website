@@ -1,5 +1,6 @@
 // MIXINS
 /* ==================================================================================================================== */
+@use "sass:math";
 
 @mixin flex {
     display: flex;
@@ -40,7 +41,7 @@
 @mixin common-styles-for-rectangle-decor-mob {
     position        : absolute;
     top             : 0;
-    left            : 3.3rem / 37.5rem * 100%;
+    left            : math.div(3.3rem, 37.5rem) * 100%;
     width           : 12.8rem;
     height          : 0.6rem;
     background-image: $main-accent;

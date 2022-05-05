@@ -2,6 +2,7 @@
 
 /*THE SECTIONS LINK WITH ARROW*/
 /*============================================================================================================*/
+@use "sass:math";
 
 %common-styles-for-arrow-btns {
     @include bg-cover;
@@ -104,7 +105,7 @@
     @include flex;
     @include flex-column;
     width  : 100%;
-    padding: 0 2.4rem / 37.5rem * 100% 0 3.3rem / 37.5rem * 100%;
+    padding: 0 math.div(2.4rem, 37.5rem) * 100% 0 math.div(3.3rem, 37.5rem) * 100%;
     margin : 4rem 0;
 }
 
@@ -170,9 +171,9 @@
 
 .grid-col__text-box {
     position : absolute;
-    top      : 23.6rem / 37.5rem * 100%;
-    left     : 3.3rem / 37.5rem * 100%;
-    min-width: 31rem / 37.5rem * 100%;
+    top      : math.div(23.6rem, 37.5rem) * 100%;
+    left     : math.div(3.3rem, 37.5rem) * 100%;
+    min-width: math.div(31rem, 37.5rem) * 100%;
 }
 
 .grid-col__text-box .arrow-link {
@@ -208,7 +209,7 @@
 /*============================================================================================================*/
 
 .features .container {
-    padding: 0 3.2rem / 37.5rem *100% 0 3.3rem / 37.5rem *100%;
+    padding: 0 math.div(3.2rem, 37.5rem) *100% 0 math.div(3.3rem, 37.5rem) *100%;
 }
 
 .features-grid {

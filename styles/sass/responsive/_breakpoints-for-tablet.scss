@@ -1,4 +1,5 @@
 /*MEDIA QUERIES FOR TABLET SCREEN SIZES*/
+@use "sass:math";
 
 @media screen and (min-width: 500px) {
 
@@ -11,7 +12,7 @@
         @include bg-cover;
         @include bg-center;
         @include bg-no-repeat;
-        width: 27.3rem / 76.8rem * 100%;
+        width: math.div(27.3rem, 76.8rem) * 100%;
     }
 
     /*TEXT CONTENT*/
@@ -25,7 +26,7 @@
 
     .text-container {
         position: static;
-        width   : 49.5rem / 76.8rem * 100%;
+        width   : math.div(49.5rem, 76.8rem) * 100%;
     }
 
     .create .text-container {
@@ -49,7 +50,7 @@
 
     .text-box,
     .hero .text-box {
-        padding: 0 5.4rem / 49.5rem * 100% 0 5.4rem / 49.5rem * 100%;
+        padding: 0 math.div(5.4rem, 49.5rem) * 100% 0 math.div(5.4rem, 49.5rem) * 100%;
     }
 
     .text-box__heading {
@@ -115,11 +116,11 @@
     /*============================================================================================================*/
 
     .features .container {
-        padding: 0 12rem / 76.8rem *100% 0 12rem / 76.8rem *100%;
+        padding: 0 math.div(12rem, 76.8rem) *100% 0 math.div(12rem, 76.8rem) *100%;
     }
 
     .features .features-container {
-        padding: 0 4rem / 76.8rem *100% 0 3.8rem / 76.8rem *100%;
+        padding: 0 math.div(4rem,6.8rem) *100% 0 math.div(3.8rem, 76.8rem) *100%;
     }
 
     /*============================================================================================================*/
@@ -129,7 +130,7 @@
     /*============================================================================================================*/
 
     .grid {
-        grid-template-columns: 38.9rem / 76.8rem * 100% 37.9rem / 76.8rem * 100%;
+        grid-template-columns: math.div(38.9rem, 76.8rem) * 100% math.div(37.9rem, 76.8rem) * 100%;
         grid-template-rows   : repeat(2, 1fr);
     }
 
@@ -163,9 +164,9 @@
     }
 
     .grid-col__text-box {
-        top      : 36.1rem / 50rem * 100%;
-        left     : 3.3rem / 38.9rem * 100%;
-        min-width: 30.3rem / 38.9rem * 100%;
+        top      : math.div(36.1rem, 50rem) * 100%;
+        left     : math.div(3.3rem, 38.9rem) * 100%;
+        min-width: math.div(30.3rem, 38.9rem) * 100%;
     }
 
     /*============================================================================================================*/
@@ -190,9 +191,9 @@
     }
 
     .mountain .column {
-        min-width : 38.7rem / 76.8rem * 100%;
-        min-height: 40.6rem / 65rem * 100%;
-        padding   : 0 34.2rem / 76.8rem * 100% 0 3.9rem / 76.8rem * 100%;
+        min-width : math.div(38.7rem, 76.8rem) * 100%;
+        min-height: math.div(40.6rem, 65rem) * 100%;
+        padding   : 0 math.div(34.2rem, 76.8rem) * 100% 0 math.div(3.9rem, 76.8rem) * 100%;
         margin    : 4rem 0;
     }
 
@@ -224,7 +225,7 @@
 
     /*THE STORY SECTION(GALLERY)*/
     .story .grid {
-        grid-template-columns: repeat(2, 38.4rem / 76.8rem * 100%);
+        grid-template-columns: repeat(2, math.div(38.4rem, 76.8rem) * 100%);
     }
 
     .grid-col__img5 {
@@ -288,9 +289,9 @@
     }
 
     .story .grid-col__text-box {
-        top      : 34rem / 50rem * 100%;
-        left     : 4.2rem / 38.4rem * 100%;
-        min-width: 29.9rem / 38.4rem * 100%;
+        top      : math.div(34rem, 50rem) * 100%;
+        left     : math.div(4.2rem, 38.4rem) * 100%;
+        min-width: math.div(29.9rem, 38.4rem) * 100%;
     }
 
     /*============================================================================================================*/
@@ -304,7 +305,7 @@
 @media screen and (min-width: 768px) {
 
     .header .container {
-        padding: 0 4rem / 76.8rem *100%;
+        padding: 0 math.div(4rem, 76.8rem) *100%;
     }
 
     /*HEADER*/
@@ -379,7 +380,7 @@
     /*============================================================================================================*/
 
     .features .container {
-        padding: 0 15.6rem / 76.8rem *100% 0 15.5rem / 76.8rem *100%;
+        padding: 0 math.div(15.6rem, 76.8rem) *100% 0 math.div(15.5rem, 76.8rem) *100%;
     }
 
     .features-grid {
@@ -391,7 +392,7 @@
     }
 
     .features .features-container {
-        padding: 0 4rem / 76.8rem *100% 0 3.8rem / 76.8rem *100%;
+        padding: 0 math.div(4rem, 76.8rem) *100% 0 math.div(3.8rem, 76.8rem) *100%;
     }
 
     .co-features-grid {
@@ -441,7 +442,7 @@
         @include flex-row;
         justify-content: space-between;
         max-width      : 111rem;
-        padding        : 0 4rem / 76.8rem * 100% 0 3.9rem / 76.8rem * 100%;
+        padding        : 0 math.div(4rem, 76.8rem) * 100% 0 math.div(3.9rem, 76.8rem) * 100%;
         margin         : 0 auto;
     }
 
@@ -462,13 +463,13 @@
     /*============================================================================================================*/
 
     .pricing .container {
-        padding: 11.2rem 4rem / 76.8rem * 100% 6.4rem 3.9rem / 76.8rem * 100%;
+        padding: 11.2rem math.div(4rem, 76.8rem) * 100% 6.4rem math.div(3.9rem, 76.8rem) * 100%;
     }
 
     .pricing-grid__item {
         @include grid;
         grid-template-columns: repeat(2, 1fr);
-        min-width            : 68.9rem / 76.8rem * 100%;
+        min-width            : math.div(68.9rem, 76.8rem) * 100%;
     }
 
     .pricing-grid-rectangle-decor {
@@ -501,7 +502,7 @@
     /*============================================================================================================*/
 
     .compare .container {
-        padding: 0 4rem / 76.8rem * 100% 0 3.9rem / 76.8rem * 100%;
+        padding: 0 math.div(4rem, 76.8rem) * 100% 0 math.div(3.9rem, 76.8rem) * 100%;
     }
 
     .table__caption {
@@ -515,7 +516,7 @@
     }
 
     .table__head {
-        padding      : 0 2.4rem / 68.9rem * 100%;
+        padding      : 0 math.div(2.4rem, 68.9rem) * 100%;
         margin-bottom: 2.35rem;
     }
 
@@ -540,7 +541,7 @@
     .table__body {
         @include flex;
         @include flex-row;
-        padding: 0 6.2rem / 68.9rem * 100% 0 2.4rem / 68.9rem * 100%;
+        padding: 0 math.div(6.2rem, 68.9rem) * 100% 0 math.div(2.4rem, 68.9rem) * 100%;
     }
 
     .table__body>.td-1 {
@@ -580,7 +581,7 @@
         @include flex;
         @include flex-row;
         justify-content: space-between;
-        padding        : 0 4rem / 76.8rem * 100% 0 3.9rem / 76.8rem *100%;
+        padding        : 0 math.div(4rem, 76.8rem) * 100% 0 math.div(3.9rem, 76.8rem) *100%;
     }
 
     .footer {
