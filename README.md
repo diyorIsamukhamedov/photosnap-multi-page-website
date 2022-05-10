@@ -33,6 +33,8 @@ Users should be able to:
 
 ### Built with
 
+### Front-End
+
 - JavaScript(ES6)
 - Semantic HTML5 markup
 - CSS3 custom properties
