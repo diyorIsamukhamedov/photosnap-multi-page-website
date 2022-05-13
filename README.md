@@ -35,15 +35,16 @@ Users should be able to:
 
 ### Front-End
 
-- JavaScript(ES6)
-- Semantic HTML5 markup
-- CSS3 custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- Responsive-Adaptive markup
-- Preprocessor SASS in syntax SCSS
-- BEM methodology
+- JavaScript(ES6);
+- DOM;
+- Semantic HTML5 markup;
+- CSS3 custom properties;
+- Flexbox;
+- CSS Grid;
+- Mobile-first workflow;
+- Responsive-Adaptive markup;
+- Preprocessor SASS in syntax SCSS;
+- BEM methodology.
 
 ## Author
 
