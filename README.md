@@ -48,4 +48,4 @@ Users should be able to:
 
 ## Author
 
-- GitHub - (https://github.com/CyberGenCoder)
+- GitHub - ([https://github.com/CyberGenCoder](https://github.com/diyorIsamukhamedov))
